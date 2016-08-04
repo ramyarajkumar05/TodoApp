@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>todoApp</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body onload="loadListFromLocalStorage()">
+ <div id="main" class="hero-unit">   
+  <div id="head" >
+  <img src="images/todo.jpg" alt="todo" width=50px height=50px>
+    <h1 class="wrap"> Things to do </h1>
+
+    Enter a todo item <input type="text" name="todoitem" id="todoTxtBox" size="50" maxlength="100" onkeydown = "triggerAdd();">
+
+    <input class="myButton" id="add" type="button" value="+" onClick="addtoList(document.getElementById('todoTxtBox').value,false);"></button>
+
+  </div>
+  <div id="content">
+  </div>
+</div>
+
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
